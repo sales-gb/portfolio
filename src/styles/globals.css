@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scrollbar-none;
+}
+
+body {
+  @apply bg-brand2 text-brand4;
+}
+
+.next-error-h1, .next-error-h1 ~ div h2 {
+  @apply text-brand4;
+}
+
+@layer utilities {
+  .clip-custom {
+    clip-path: polygon(31% 0, 100% 25%, 61% 100%, 0 93%);
+  }
+
+  .tracking-down {
+    letter-spacing: 0.2rem;
+  }
+}
