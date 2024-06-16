@@ -20,23 +20,29 @@ const Seo = ({ title, description, routes }: SeoProps) => {
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:site_name" content="Vagner Mengali" />
+      <meta property="og:site_name" content="Gabriel Sales" />
       <meta property="og:type" content="website" key="ogtype" />
-      <meta property="og:url" content="https://vagnermengali.com/" />
+      <meta property="og:url" content="https://gabriel-sales.vercel.app/" />
       {/* trocar essas urls depois */}
       <meta property="og:image:alt" content={description} />
       {/* <meta property="og:image" content="/portfolio-purple.webp" />
-            <meta name="twitter:title" content="Vagner Mengali" />
+            <meta name="twitter:title" content="Gabriel Sales" />
             <meta name="twitter:site" content="@vagnermengali" />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:image" content="/portfolio-purple.webp" />
             <meta name="twitter:description" content={description} /> */}
       <meta property="al:ios:app_name" content="Gabriel Sales" />
-      <meta property="al:ios:url" content="https://vagnermengali.com/" />
+      <meta property="al:ios:url" content="https://gabriel-sales.vercel.app/" />
       {/* trocar essas urls depois */}
       <meta property="al:android:app_name" content="Gabriel Sales" />
-      <meta property="al:android:url" content="https://vagnermengali.com/" />
-      <link rel="canonical" href={`https://vagnermengali.com/${routes}`} />
+      <meta
+        property="al:android:url"
+        content="https://gabriel-sales.vercel.app/"
+      />
+      <link
+        rel="canonical"
+        href={`https://gabriel-sales.vercel.app/${routes}`}
+      />
       <meta name="theme-color" content="#FFFFFF" />
       <meta name="msapplication-TileColor" content="#FFFFFF" />
       <meta name="msapplication-navbutton-color" content="#FFFFFF" />

@@ -16,8 +16,8 @@ export const Work = [
     tags: ["NextJs", "TypeScript", "TailwindCSS"],
     image: "/dashboard.webp",
     screens: { desktop: true, mobile: true },
-    demo: "https://yrprey-vagnermengali.vercel.app/",
-    github: "https://github.com/vagnermengali/yrprey",
+    demo: "https://github.com/sales-gb/restaurant-dashboard",
+    github: "https://github.com/sales-gb/restaurant-dashboard",
   },
   {
     id: 3,
@@ -26,8 +26,8 @@ export const Work = [
     tags: ["TypeScript", "Styled Components", "React"],
     image: "/home-you.webp",
     screens: { desktop: true, mobile: false },
-    demo: "https://developer-green-portfolio-vagnermengali.vercel.app/",
-    github: "https://github.com/vagnermengali/developer-green-portfolio",
+    demo: "https://github.com/HomeYou-Kenzie-Academy-t15-g4",
+    github: "https://github.com/HomeYou-Kenzie-Academy-t15-g4",
   },
   {
     id: 4,

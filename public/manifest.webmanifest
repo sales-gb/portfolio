@@ -49,8 +49,8 @@
   "related_applications": [
     {
       "platform": "web",
-      "url": "https://vagnermengali.com",
-      "id": "com.vagnermengali.portfolio"
+      "url": "https://gabriel-sales.vercel.app/",
+      "id": "https://gabriel-sales.vercel.app/"
     }
   ],
   "manifest_version": 3,
