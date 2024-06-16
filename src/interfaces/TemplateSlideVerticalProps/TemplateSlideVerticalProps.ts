@@ -1,5 +1,7 @@
+import React from "react";
+
 export interface TemplateSlideVerticalProps {
-  title: string | Element;
+  title: string;
   details?: string;
   textButton?: string;
   number: string;

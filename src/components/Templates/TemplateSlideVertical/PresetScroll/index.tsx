@@ -41,10 +41,10 @@ const TemplateSlideVertical = ({
     <section
       className={`${
         home ? "justify-center" : "justify-start sm:justify-center"
-      } w-screen h-dvh overflow-hidden flex items-end flex-col justify-start sm:justify-center relative`}
+      } relative flex h-dvh w-screen flex-col items-end justify-start overflow-hidden sm:justify-center`}
     >
       <motion.div
-        className="flex justify-end sm:justify-center my-0 mx-auto sm:mx-0 w-full h-full"
+        className="mx-auto my-0 flex h-full w-full justify-end sm:mx-0 sm:justify-center"
         initial={{ width: "100%", height: "100%" }}
         whileInView={{
           width: home ? "100%" : isMobile ? "100%" : "75%",
@@ -59,25 +59,25 @@ const TemplateSlideVertical = ({
         {home && (
           <>
             <div
-              className={`top-[60%] sm:bottom-0 sm:top-[6%] left-5 sm:left-20 lg:left-44 flex flex-col justify-center absolute z-20`}
+              className={`absolute left-5 top-[60%] z-20 flex flex-col justify-center sm:bottom-0 sm:left-20 sm:top-[6%] lg:left-44`}
             >
               <AnimatedCharactersDetailsLeft duration={1}>
-                <h2 className="w-80  lg:w-5/6 text-4xl sm:text-6xl lg:text-8xl text-brand8 font-medium leading-none tracking-widest">
+                <h2 className="w-80 text-4xl font-medium leading-none tracking-widest text-brand8 sm:text-6xl lg:w-5/6 lg:text-8xl">
                   {" "}
-                  {`${title}`}{" "}
+                  {title}{" "}
                 </h2>
               </AnimatedCharactersDetailsLeft>
               <Bars />
               <AnimatedCharactersDetailsLeft duration={1.1}>
-                <h3 className="whitespace-normal tracking-widest leading-normal text-brand4 font-light text-sm sm:text-xl lg:text-3xl">
+                <h3 className="whitespace-normal text-sm font-light leading-normal tracking-widest text-brand4 sm:text-xl lg:text-3xl">
                   {" "}
                   {details}{" "}
                 </h3>
               </AnimatedCharactersDetailsLeft>
             </div>
-            <div className="w-full sm:w-3/4 h-full flex relative items-start sm:items-center justify-center sm:justify-end sm:mt-0">
+            <div className="relative flex h-full w-full items-start justify-center sm:mt-0 sm:w-3/4 sm:items-center sm:justify-end">
               <motion.div
-                className="clip-custom w-full h-3/4 sm:h-full left-0 sm:left-36 relative bg-cover bg-no-repeat bg-center z-10"
+                className="clip-custom relative left-0 z-10 h-3/4 w-full bg-cover bg-center bg-no-repeat sm:left-36 sm:h-full"
                 style={{ backgroundImage: `url(${img})` }}
                 initial={{ scaleY: 1, scaleX: 1 }}
                 whileInView={{
@@ -96,12 +96,12 @@ const TemplateSlideVertical = ({
         {link && (
           <>
             <div
-              className={`top-[58%] sm:top-1/2 sm:-translate-y-2/4 left-5 sm:left-20 lg:left-44 flex flex-col justify-center absolute z-20`}
+              className={`absolute left-5 top-[58%] z-20 flex flex-col justify-center sm:left-20 sm:top-1/2 sm:-translate-y-2/4 lg:left-44`}
             >
               <AnimatedCharactersDetailsLeft duration={1}>
-                <h2 className="w-5/6 text-4xl sm:text-6xl lg:text-8xl text-brand8 font-medium leading-none tracking-widest">
+                <h2 className="w-5/6 text-4xl font-medium leading-none tracking-widest text-brand8 sm:text-6xl lg:text-8xl">
                   {" "}
-                  {`${title}`}{" "}
+                  {title}{" "}
                 </h2>
               </AnimatedCharactersDetailsLeft>
               <Bars />
@@ -109,7 +109,7 @@ const TemplateSlideVertical = ({
                 <AnimatedCharactersDetailsLeft duration={1.3}>
                   <Link
                     aria-label={email}
-                    className="text-sm sm:text-3xl hover:text-brand9 mb-6 sm:mb-4 leading-6 sm:leading-normal text-brand4 tracking-widest duration-300 no-underline"
+                    className="mb-6 text-sm leading-6 tracking-widest text-brand4 no-underline duration-300 hover:text-brand9 sm:mb-4 sm:text-3xl sm:leading-normal"
                     href={`mailto:${email}`}
                     target="_blank"
                   >
@@ -121,7 +121,7 @@ const TemplateSlideVertical = ({
                 <AnimatedCharactersDetailsLeft duration={1.4}>
                   <Link
                     aria-label={github}
-                    className="text-sm sm:text-3xl hover:text-brand9 mb-6 sm:mb-4 leading-6 sm:leading-normal text-brand4 tracking-widest duration-300 no-underline"
+                    className="mb-6 text-sm leading-6 tracking-widest text-brand4 no-underline duration-300 hover:text-brand9 sm:mb-4 sm:text-3xl sm:leading-normal"
                     href={`${github}`}
                     target="_blank"
                   >
@@ -134,7 +134,7 @@ const TemplateSlideVertical = ({
                 <div className="flex gap-3 sm:gap-4 lg:gap-7">
                   {linkedin && (
                     <Link
-                      className="text-sm sm:text-xl lg:text-3xl text-brand4 hover:text-brand9 text-start duration-300 leading-normal no-underline align-top"
+                      className="text-start align-top text-sm leading-normal text-brand4 no-underline duration-300 hover:text-brand9 sm:text-xl lg:text-3xl"
                       href={`${linkedin}`}
                       target="_blank"
                       aria-label="linkedin"
@@ -144,7 +144,7 @@ const TemplateSlideVertical = ({
                   )}
                   {instagram && (
                     <Link
-                      className="text-sm sm:text-xl lg:text-3xl text-brand4 hover:text-brand9 text-start duration-300 leading-normal no-underline align-top"
+                      className="text-start align-top text-sm leading-normal text-brand4 no-underline duration-300 hover:text-brand9 sm:text-xl lg:text-3xl"
                       href={`${instagram}`}
                       target="_blank"
                       aria-label="instagram"
@@ -156,7 +156,7 @@ const TemplateSlideVertical = ({
               </AnimatedCharactersDetailsLeft>
             </div>
             <motion.div
-              className="flex static sm:relative mb-auto mt-16 mx-auto sm:mx-0 sm:mb-0 sm:mt-0 h-1/2 sm:h-full"
+              className="static mx-auto mb-auto mt-16 flex h-1/2 sm:relative sm:mx-0 sm:mb-0 sm:mt-0 sm:h-full"
               initial={{
                 scale: isMobile ? 1 : 0.7,
                 width: isMobile ? "80%" : "67%",
@@ -179,11 +179,11 @@ const TemplateSlideVertical = ({
                 href={`${section}`}
                 className={`${
                   cursor ? `cursor-pointer` : `cursor-default`
-                } w-full h-full left-0 relative bg-cover bg-no-repeat bg-center z-0`}
+                } relative left-0 z-0 h-full w-full bg-cover bg-center bg-no-repeat`}
                 style={{ backgroundImage: `url(${img})` }}
               >
                 <motion.div
-                  className="absolute bg-brand1 right-0"
+                  className="absolute right-0 bg-brand1"
                   initial={{ height: "100%", width: "100%" }}
                   whileInView={{ height: "100%", width: "0vw" }}
                   transition={{ ease: "anticipate", duration: 0.9, delay: 0.2 }}
@@ -201,7 +201,7 @@ const TemplateSlideVertical = ({
                   href={`${section}`}
                   className={`${cursor ? `cursor-pointer` : `cursor-default`} ${
                     abril.className
-                  } hidden sm:block sm:text-7xl lg:text-9xl h-fit whitespace-normal leading-tight`}
+                  } hidden h-fit whitespace-normal leading-tight sm:block sm:text-7xl lg:text-9xl`}
                 >
                   {number}
                 </Link>
@@ -212,18 +212,18 @@ const TemplateSlideVertical = ({
         {details && !home && (
           <>
             <div
-              className={`top-[58%] sm:top-1/2 sm:-translate-y-2/4 left-5 sm:left-20 lg:left-44 flex flex-col justify-center absolute z-20`}
+              className={`absolute left-5 top-[58%] z-20 flex flex-col justify-center sm:left-20 sm:top-1/2 sm:-translate-y-2/4 lg:left-44`}
             >
               <AnimatedCharactersDetailsLeft duration={1}>
-                <h2 className="w-80 lg:w-5/6 text-4xl sm:text-6xl lg:text-8xl text-brand8 font-medium leading-none tracking-widest">
+                <h2 className="w-80 text-4xl font-medium leading-none tracking-widest text-brand8 sm:text-6xl lg:w-5/6 lg:text-8xl">
                   {" "}
-                  {`${title}`}
+                  {title}
                 </h2>
               </AnimatedCharactersDetailsLeft>
               <Bars />
               <AnimatedCharactersDetailsLeft duration={1.1}>
-                <div className="w-full max-w-72 sm:w-1/2 h-min sm:h-20 pr-24 sm:pr-0 mb-3 sm:mb-2 lg:mb-8 lg:w-3/5 lg:pr-0 lg:h-min lg:max-w-md">
-                  <h3 className="whitespace-normal tracking-widest leading-normal text-brand4 font-light text-sm sm:text-xl lg:text-3xl">
+                <div className="mb-3 h-min w-full max-w-72 pr-24 sm:mb-2 sm:h-20 sm:w-1/2 sm:pr-0 lg:mb-8 lg:h-min lg:w-3/5 lg:max-w-md lg:pr-0">
+                  <h3 className="whitespace-normal text-sm font-light leading-normal tracking-widest text-brand4 sm:text-xl lg:text-3xl">
                     {" "}
                     {details}{" "}
                   </h3>
@@ -234,14 +234,14 @@ const TemplateSlideVertical = ({
                 <Link
                   aria-label={textButton}
                   href={`${section}`}
-                  className="w-40 h-11 text-xs relative top-1/2 left-2/4 mb-0 -translate-x-1/2 sm:w-40 sm:h-12 sm:text-sm hover:bg-brand1 hover:border-2 hover:border-solid hover:border-brand1 lg:w-44 lg:h-12 lg:text-base sm:top-auto sm:left-auto sm:translate-x-0 flex items-center justify-center text-brand4 hover:text-white cursor-pointer no-underline font-extrabold whitespace-nowrap bg-transparent text-center leading-3 border-2 border-solid border-brand1 transition-all duration-300 ease-linear px-8 py-4"
+                  className="relative left-2/4 top-1/2 mb-0 flex h-11 w-40 -translate-x-1/2 cursor-pointer items-center justify-center whitespace-nowrap border-2 border-solid border-brand1 bg-transparent px-8 py-4 text-center text-xs font-extrabold leading-3 text-brand4 no-underline transition-all duration-300 ease-linear hover:border-2 hover:border-solid hover:border-brand1 hover:bg-brand1 hover:text-white sm:left-auto sm:top-auto sm:h-12 sm:w-40 sm:translate-x-0 sm:text-sm lg:h-12 lg:w-44 lg:text-base"
                 >
                   {textButton}
                 </Link>
               </AnimatedTextButton>
             </div>
             <motion.div
-              className="flex static sm:relative mb-auto mt-16 mx-auto sm:mx-0 sm:mb-0 sm:mt-0 h-1/2 sm:h-full"
+              className="static mx-auto mb-auto mt-16 flex h-1/2 sm:relative sm:mx-0 sm:mb-0 sm:mt-0 sm:h-full"
               initial={{
                 scale: isMobile ? 1 : 0.7,
                 width: isMobile ? "80%" : "67%",
@@ -264,11 +264,11 @@ const TemplateSlideVertical = ({
                 href={`${section}`}
                 className={`${
                   cursor ? `cursor-pointer` : `cursor-default`
-                } w-full h-full left-0 relative bg-cover bg-no-repeat bg-center z-0`}
+                } relative left-0 z-0 h-full w-full bg-cover bg-center bg-no-repeat`}
                 style={{ backgroundImage: `url(${img})` }}
               >
                 <motion.div
-                  className="absolute bg-brand1 right-0"
+                  className="absolute right-0 bg-brand1"
                   initial={{ height: "100%", width: "100%" }}
                   whileInView={{ height: "100%", width: "0vw" }}
                   transition={{ ease: "anticipate", duration: 0.9, delay: 0.2 }}
@@ -286,7 +286,7 @@ const TemplateSlideVertical = ({
                   href={`${section}`}
                   className={`${cursor ? `cursor-pointer` : `cursor-default`} ${
                     abril.className
-                  } hidden sm:block sm:text-7xl lg:text-9xl h-fit whitespace-normal leading-tight`}
+                  } hidden h-fit whitespace-normal leading-tight sm:block sm:text-7xl lg:text-9xl`}
                 >
                   {number}
                 </Link>
